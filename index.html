@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main_page</title>
+    <style>
+        fieldset{
+            height:500px;
+            
+
+        }
+        legend{
+            text-align:center;
+        }
+    #id1{
+        background-color:black;
+        color:white;
+        border-radius:3px;
+        margin-right:10px;
+        cursor:pointer;
+        transition-property:background-color,font-family;
+        transition-duration:0.75s;
+        
+    }
+    #id2{
+        background-color:black;
+        color:white;
+        border-radius:3px;
+        margin-right:10px;
+        cursor:pointer;
+        transition-property:background-color,font-family;
+        transition-duration:0.75s;
+        
+    }
+    #id3{
+        background-color:black;
+        color:white;
+        border-radius:3px;
+        margin-right:10px;
+        cursor:pointer;
+        transition-property:background-color,font-family;
+        transition-duration:0.75s;
+        
+        
+    }
+    #id4{
+        background-color:black;
+        color:white;
+        border-radius:3px;
+        margin-right:5px;
+        cursor:pointer;
+        transition-property:background-color,font-family;
+        transition-duration:0.75s;
+        
+    }
+    div{
+        background-color:blueviolet;
+        border:2px solid black;
+        margin:100px 0px 100px;
+        transition-property:all;
+        transition-duration: 4s;
+        height:100px;
+        width:400px;
+    
+    }
+    #id1:hover~div{
+        background-color:red;
+        opacity:0.55;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transform:translatex(30px);
+}
+   
+    #id2:hover~div{
+        background-color:red;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         transform:scale(0.8);
+ }
+    #id3:hover~div{
+        background-color:green;
+        opacity:0.55;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    transform:rotateX(45deg);
+}
+    #id4:hover~div{
+        background-color:green;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        transform:skewX(40deg);
+    }
+
+    </style>
+</head>
+<body>
+    <!-- implemented Internal CSS styling  throughout the page -->
+     <!-- added div container to perform transfrom properties for my understanding rather than a image -->
+    <fieldset>
+        <legend>All about the TRANSFORM property</legend>
+        <button id="id1">Translate</button>&nbsp;&nbsp;
+        <button id="id2">Scale</button>&nbsp;&nbsp;
+        <button id="id3">Rotate</button>&nbsp;&nbsp;
+        <button id="id4">Skew</button><br><br>
+        <h3 id="id5">INFO ABOUT Translate property</h3>
+        <p>The translate property defines x- and y-coordinates of an element in 2D. You can also define the z-coordinate to change position in 3D. .Translate property transforms the elements along x-axis,Y-axis,Z-axis i.e.;<br>it can  change the position of the element in 2D or 3D depending on the axis,we use as the property like translateX(),translateY(),translateZ().<br>
+        <strong>TranslateX()</strong>:we need to mention the value in between () symbol so that it transforms the element along the X-axis.
+   <br> Example:TranslateX(50px)</p>
+   similiarly translateY(),translateZ().
+        <div id="id6">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Culpa eveniet sapiente nam deleniti optio, at illo unde, 
+                <br>doloribus</p>
+        </div>
+
+    </fieldset>
+</body>
+</html>
